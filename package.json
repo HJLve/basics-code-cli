@@ -1,0 +1,8 @@
+{
+    "name": "basics-code-cli",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+      "start:uniapp": "pnpm --filter basics-code-uniapp-cli start"
+    }
+  }

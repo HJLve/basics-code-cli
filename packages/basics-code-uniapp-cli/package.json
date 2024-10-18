@@ -1,0 +1,26 @@
+{
+  "name": "basics-code-uniapp-cli",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "bin": {
+    "create-uniindie": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "cli",
+    "uniapp",
+    "project generator",
+    "tailwindcss"
+  ],
+  "author": "HJ",
+  "license": "MIT",
+  "description": "一个为独立开发者设计的快速开发的uniapp模板 + tailwindcss",
+  "type": "module",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.0.0"
+  }
+}
