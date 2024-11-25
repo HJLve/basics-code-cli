@@ -5,13 +5,21 @@
 旨在帮助独立开发者快速启动 UniApp 项目，避免重复去插件市场下载组件及配置 tailwindcss。
 注意：本项目仅适用于使用 HbuilderX 进行开发。如果想使用 VSCode 进行开发，请使用 [uni-app-cli](https://github.com/dcloudio/uni-app-cli),或其他三方脚手架。
 
+
 ## 快速开始
 
-要使用这个模板创建新项目,请运行以下命令:
-
+使用 npx (推荐):
 ```bash
-npx create-uniindie
+npx create-basic-uni
 ```
+
+## 包含组件
+
+- mp-html   查看 [功能介绍](https://jin-yufeng.gitee.io/mp-html/#/overview/feature) 了解更多
+- z-paging  文档地址：[https://z-paging.zxlee.cn](https://z-paging.zxlee.cn)
+- uni-popup
+- uni-nav-bar
+
 
 ## 特性
 

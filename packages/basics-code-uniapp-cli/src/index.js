@@ -3,12 +3,19 @@
 import { program } from 'commander';
 import { createProject } from './commands/create.js';
 
-program
-  .version('1.0.0')
-  .description('一个用于生成uniapp模板项目的CLI工具');
+async function run() {
+  try {
+    program
+      .version('0.0.1')
+      .description('基于 HbuilderX 的 uniapp 项目模板生成器')
+      .action(createProject);
 
-program.parse(process.argv);
+    program.parse(process.argv);
 
-if (!process.argv.slice(2).length) {
-  createProject();
+  } catch (err) {
+    console.error('创建项目时发生错误:', err);
+    process.exit(1);
+  }
 }
+
+run();

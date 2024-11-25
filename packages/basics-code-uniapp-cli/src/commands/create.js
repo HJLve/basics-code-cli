@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import { generateProject } from '../utils/project-generator.js';
 
 export async function createProject() {
-    console.log('欢迎使用uniapp项目生成器!');
+    console.log('欢迎使用 Basic Uni 项目生成器!');
     console.log('请回答以下问题来配置您的项目：');
 
     const answers = await inquirer.prompt([
@@ -10,6 +10,7 @@ export async function createProject() {
             type: 'input',
             name: 'projectName',
             message: '请输入项目名称：',
+            default: 'my-uni-app',
             validate: input => input.trim() !== '' || '项目名称不能为空'
         },
         {

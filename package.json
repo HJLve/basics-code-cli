@@ -1,8 +1,12 @@
 {
-    "name": "basics-code-cli",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-      "start:uniapp": "pnpm --filter basics-code-uniapp-cli start"
-    }
+  "name": "basics-code-cli",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start:uniapp": "pnpm --filter basics-code-uniapp-cli start"
+  },
+  "dependencies": {
+    "download-git-repo": "^3.0.2",
+    "ora": "^8.1.1"
   }
+}
